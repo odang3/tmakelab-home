@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
+import { profile } from '../data/profile';
 
-const BASE = 'tmakelab';
+const BASE = profile.brand;
 
 export function useDocumentTitle(title?: string) {
   useEffect(() => {

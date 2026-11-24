@@ -34,15 +34,16 @@ export const projects: Project[] = [
   {
     slug: 'bamboo',
     name: '대나무 숲',
-    summary: '3D 대나무 숲을 걸으며 마음을 털어놓고, 익명 메아리에 공감을 전하는 공간',
+    summary: '누구에게도 못 한 말, 여기서는 그냥 털어놓고 가세요.',
     url: 'https://bamboo.tmakelab.com',
     thumbnail: '/images/projects/bamboo.jpg',
     status: 'live',
     tags: ['Three.js', 'WebSocket', 'JavaScript', 'Cloudflare'],
     featured: true,
+    startedAt: '2026-11',
     detail: {
       problem:
-        '주변에 쉽게 꺼내기 어려운 이야기를 이름을 드러내지 않고 털어놓고, 다른 사람의 이야기에 조용히 공감할 수 있는 곳이 필요했습니다.',
+        '가까운 사람에게도 차마 꺼내기 어려운 말이 있습니다. 누구에게도 못 한 말을 잠깐 털어놓고 갈 수 있는 곳이 있으면 좋겠다고 생각해 대나무 숲을 만들었습니다.',
       solution:
         'WASD로 걸어 다니는 3D 대나무 숲에서 글(500자) 또는 목소리(20초)로 "숲에 외치기"를 합니다. 나만 털어놓기(저장 안 함)와 익명 메아리 공개(7일 뒤 자동 삭제) 중 고를 수 있고, 로비에서는 대나무 여덟 그루에 걸린 쪽지로 다른 사람의 메아리를 읽고 공감을 보냅니다. 손인사·명상·돌탑쌓기 같은 상호작용과 안내 NPC "죽순지기", 저사양·접근성을 위한 텍스트 모드와 움직임 줄이기 설정도 제공합니다.',
       architecture:

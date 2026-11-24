@@ -34,9 +34,4 @@ src/
 2. Cloudflare → Workers & Pages → Pages → Git 연결. Build `npm run build`, Output `dist`
 3. Custom domains에 `tmakelab.com`, `www.tmakelab.com` 추가
 4. Redirect Rule: `www.tmakelab.com/*` → `https://tmakelab.com/${1}` (301)
-5. Email Routing: `contact@tmakelab.com` → 개인 메일 포워딩
-6. Web Analytics 활성화 (CSP에 cloudflareinsights 허용되어 있음)
-
-## TODO (실데이터 교체)
-- [ ] `profile.ts`: 소개 문구·스킬 확정
-- [ ] `public/og-image.png` (1200×630) 제작
+5. Web Analytics 활성화 (CSP에 cloudflareinsights 허용되어 있음)
