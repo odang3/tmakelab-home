@@ -1,0 +1,25 @@
+/* 디자인 토큰 — 다크 기본, 라이트는 시스템 설정 또는 data-theme="light" */
+:root {
+  --bg: #0b0d12; --surface: #141821; --surface-2: #1a1f2b; --border: #232836;
+  --text: #e6e8ee; --muted: #8a93a6; --accent: #4f8cff; --accent-soft: rgba(79, 140, 255, 0.14);
+  --on-accent: #ffffff;
+  --live: #22c55e; --wip: #f59e0b; --archived: #6b7280;
+  --f-display: 'Space Grotesk', 'Pretendard Variable', Pretendard, system-ui, sans-serif;
+  --f-body: 'Pretendard Variable', Pretendard, system-ui, -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  --f-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --radius: 12px;
+  --maxw: 1120px;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme='dark']) {
+    --bg: #f7f8fa; --surface: #ffffff; --surface-2: #f0f2f6; --border: #e4e7ec;
+    --text: #171a21; --muted: #5b6475; --accent: #2563eb; --accent-soft: rgba(37, 99, 235, 0.1);
+    color-scheme: light;
+  }
+}
+:root[data-theme='light'] {
+  --bg: #f7f8fa; --surface: #ffffff; --surface-2: #f0f2f6; --border: #e4e7ec;
+  --text: #171a21; --muted: #5b6475; --accent: #2563eb; --accent-soft: rgba(37, 99, 235, 0.1);
+  color-scheme: light;
+}
