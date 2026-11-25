@@ -35,8 +35,8 @@ export default function ProjectDetail() {
 
       {d ? (
         <div className="detail__cols">
-          <div className="panel"><h2>문제</h2><p>{d.problem}</p></div>
-          <div className="panel"><h2>해결</h2><p>{d.solution}</p></div>
+          {d.problem && <div className="panel"><h2>문제</h2><p>{d.problem}</p></div>}
+          <div className="panel" style={d.problem ? undefined : { gridColumn: '1 / -1' }}><h2>해결</h2><p>{d.solution}</p></div>
           {d.architecture && <div className="panel" style={{ gridColumn: '1 / -1' }}><h2>아키텍처</h2><p className="mono">{d.architecture}</p></div>}
         </div>
       ) : (

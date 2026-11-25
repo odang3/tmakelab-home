@@ -42,7 +42,7 @@ export default function Home() {
           {/* 프로젝트가 적을 때 필터는 의미가 없어 숨김 */}
           {projects.length >= 3 && <ProjectFilter tags={tags} value={filter} onChange={setFilter} />}
           {list.length ? (
-            <div className={list.length === 1 ? 'grid grid--single' : 'grid'}>{list.map((p) => <ProjectCard key={p.slug} project={p} />)}</div>
+            <div className={list.length === 1 ? 'grid grid--single' : list.length === 2 ? 'grid grid--two' : 'grid'}>{list.map((p) => <ProjectCard key={p.slug} project={p} />)}</div>
           ) : (
             <div className="empty">조건에 맞는 프로젝트가 없습니다.</div>
           )}
