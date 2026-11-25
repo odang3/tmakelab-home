@@ -28,7 +28,6 @@ export default function ProjectDetail() {
         {project.status !== 'archived' && (
           <a className="btn btn--primary" href={project.url} target="_blank" rel="noopener noreferrer">{hostOf(project.url)} 방문 ↗</a>
         )}
-        {project.repo && <a className="btn" href={project.repo} target="_blank" rel="noopener noreferrer">GitHub ↗</a>}
       </div>
 
       <div className="thumb detail__shot"><ProjectThumb project={project} /></div>

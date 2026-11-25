@@ -8,7 +8,6 @@ export type Project = {
   name: string;
   summary: string;
   url: string;
-  repo?: string;
   /** /images/projects/xxx.webp — 없으면 자동 생성 썸네일 사용 */
   thumbnail?: string;
   status: ProjectStatus;
@@ -56,7 +55,6 @@ export const projects: Project[] = [
     name: '한 정거장 던전',
     summary: '출근길 지하철이 던전이 된다. 1호선을 한 정거장씩 클리어하는 도트 액션 로그라이트.',
     url: 'https://subway-dungeon.tmakelab.com',
-    repo: 'https://github.com/odang3/subway_dungeon',
     thumbnail: '/images/projects/subway-dungeon.jpg',
     status: 'live',
     tags: ['React', 'PWA', 'JavaScript'],
