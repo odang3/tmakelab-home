@@ -56,10 +56,14 @@ export const projects: Project[] = [
     name: '한 정거장 던전',
     summary: '출근길 지하철이 던전이 된다. 1호선을 한 정거장씩 클리어하는 도트 액션 로그라이트.',
     url: 'https://subway-dungeon.tmakelab.com',
+    repo: 'https://github.com/odang3/subway_dungeon',
     thumbnail: '/images/projects/subway-dungeon.jpg',
     status: 'live',
     tags: ['React', 'PWA', 'JavaScript'],
+    startedAt: '2026-10',
     detail: {
+      problem:
+        '출퇴근길 지하철에서 대중교통 예절을 지키지 않는 사람들을 자주 마주쳤습니다. 그때 쌓인 답답함을 유쾌하게 풀고 싶어, 지하철 빌런들을 퇴치하는 게임을 만들었습니다.',
       solution:
         '인천역부터 연천역까지 1호선 65개 역을 한 정거장씩 클리어하는 도트 액션 로그라이트입니다. 역마다 여러 라운드의 출근길 빌런을 제압하고, 서류가방(밸런스형)·노트북(중량형)·우산(거리조절형) 중 무기를 골라 빌런과의 상성을 노립니다. 클리어로 모은 질서 포인트로 체력·공격력·방어력을 강화해 다음 출근길을 준비합니다.',
       architecture:
