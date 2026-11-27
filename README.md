@@ -20,7 +20,7 @@ KPI 타일, 필터 태그, 푸터 서브도메인 목록, sitemap은 모두 proj
 
 ## 구조
 ```
-public/   _redirects(SPA fallback) · _headers(보안 헤더/CSP) · robots.txt · favicon.svg · theme-init.js
+public/   _headers(보안 헤더/CSP) · robots.txt · favicon.svg · theme-init.js
 src/
   data/        projects.ts · profile.ts
   styles/      tokens.css(디자인 토큰, 다크 기본/라이트) · global.css
@@ -31,7 +31,8 @@ src/
 
 ## Cloudflare Pages 배포
 1. GitHub 저장소 생성 후 push
-2. Cloudflare → Workers & Pages → Pages → Git 연결. Build `npm run build`, Output `dist`
+2. Cloudflare → Workers & Pages → Pages → Git 연결. Build `npm run build`, Output `dist` (Node 버전은 `.nvmrc`)
+   - 404.html이 없으므로 Pages가 모르는 경로를 index.html로 응답(SPA) → `/projects/:slug` 새로고침 정상
 3. Custom domains에 `tmakelab.com`, `www.tmakelab.com` 추가
 4. Redirect Rule: `www.tmakelab.com/*` → `https://tmakelab.com/${1}` (301)
 5. Web Analytics 활성화 (CSP에 cloudflareinsights 허용되어 있음)
