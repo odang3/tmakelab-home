@@ -43,8 +43,7 @@ h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; margin: 0; line-
 #career { margin-bottom: clamp(40px, 7vw, 80px); }
 .career { padding: clamp(20px, 4vw, 40px); border: 1px solid var(--accent); border-radius: var(--radius); background: var(--surface); }
 .career h2 { color: var(--accent); font-family: var(--f-mono); font-size: clamp(22px, 3vw, 30px); }
-.career__note { color: var(--muted); font-size: 13px; margin: 6px 0 24px; }
-.career__timeline { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); list-style: none; margin: 0; padding: 0; }
+.career__timeline { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); list-style: none; margin: 24px 0 0; padding: 0; }
 .career__timeline li { position: relative; border-top: 2px solid var(--accent); padding: 18px 14px 0; }
 .career__timeline li::before { content: ''; position: absolute; top: -6px; left: 14px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
 .career__timeline h3 { font-size: clamp(16px, 2vw, 20px); }
