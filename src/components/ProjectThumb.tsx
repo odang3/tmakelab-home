@@ -7,15 +7,9 @@ function hash(s: string) {
   return h;
 }
 
-export default function ProjectThumb({
-  project,
-  loading = 'lazy',
-}: {
-  project: Project;
-  loading?: 'eager' | 'lazy';
-}) {
+export default function ProjectThumb({ project }: { project: Project }) {
   if (project.thumbnail) {
-    return <img src={project.thumbnail} alt={`${project.name} 화면`} loading={loading} width={640} height={360} />;
+    return <img src={project.thumbnail} alt={`${project.name} 화면`} loading="lazy" width={640} height={360} />;
   }
   const h = hash(project.slug);
   const hue = h % 360;

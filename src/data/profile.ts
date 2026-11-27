@@ -2,10 +2,9 @@
 export const profile = {
   siteUrl: 'https://tmakelab.com',
   brand: 'the make lab',
-  eyebrow: 'DEVELOPER · THE MAKE LAB',
-  headline: ['일상에서 발견한 아이디어를', '웹 서비스', '로 만듭니다.'] as const,
+  headline: '데이터와 시스템을 만드는 개발자',
   intro:
-    '직접 만든 서비스를 운영하며, 무엇을 만들었고 왜 그렇게 만들었는지 기록합니다.',
+    'Java와 Python으로 백엔드를 개발하고, The Make Lab에서 직접 만든 웹 서비스를 운영합니다.',
   about:
     'Java와 Python으로 백엔드를, JavaScript와 React로 사용자 화면을 개발합니다. The Make Lab은 떠오른 아이디어를 웹 서비스로 구현하고, 그 과정에서 배운 점을 정리하는 공간입니다.',
   github: 'https://github.com/odang3',

@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import Hero from '../components/Hero';
+import Career from '../components/Career';
 import KpiTiles from '../components/KpiTiles';
 import Skills from '../components/Skills';
 import Contact from '../components/Contact';
@@ -37,12 +38,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <section id="about" className="section">
-        <div className="container about">
-          <h2>About</h2>
-          <p>{profile.about}</p>
-        </div>
-      </section>
+      <Career />
       <section id="projects" className="section">
         <div className="container">
           <h2>Projects</h2>
@@ -55,6 +51,12 @@ export default function Home() {
             <div className="empty">조건에 맞는 프로젝트가 없습니다.</div>
           )}
           <KpiTiles />
+        </div>
+      </section>
+      <section id="about" className="section">
+        <div className="container about">
+          <h2>About</h2>
+          <p>{profile.about}</p>
         </div>
       </section>
       <Skills />
