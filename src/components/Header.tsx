@@ -4,11 +4,10 @@ import ThemeToggle from './ThemeToggle';
 import { profile } from '../data/profile';
 
 const links = [
-  { id: 'career', label: 'Career' },
-  { id: 'projects', label: 'Projects' },
-  { id: 'about', label: 'About' },
-  { id: 'skills', label: 'Skills' },
-  { id: 'contact', label: 'Contact' },
+  { id: 'career', label: '실무 경험' },
+  { id: 'projects', label: '프로젝트' },
+  { id: 'about', label: '일하는 방식' },
+  { id: 'contact', label: '연락' },
 ];
 
 export default function Header() {
@@ -19,7 +18,6 @@ export default function Header() {
     <header className="header">
       <div className="container header__in">
         <Link to="/" className="logo" onClick={close}>
-          <span className="logo__mark" aria-hidden="true">t</span>
           {profile.brand}
         </Link>
         <nav className="nav" id="site-nav" data-open={open} aria-label="주요 메뉴">

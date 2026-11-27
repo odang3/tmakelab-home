@@ -1,7 +1,6 @@
 import { useMemo, useState } from 'react';
 import Hero from '../components/Hero';
 import Career from '../components/Career';
-import KpiTiles from '../components/KpiTiles';
 import Skills from '../components/Skills';
 import Contact from '../components/Contact';
 import ProjectCard from '../components/ProjectCard';
@@ -39,23 +38,22 @@ export default function Home() {
     <>
       <Hero />
       <Career />
-      <section id="projects" className="section">
+      <section id="projects" className="section section--projects" aria-labelledby="projects-title">
         <div className="container">
-          <h2>Projects</h2>
-          <p className="section__sub">*.tmakelab.com 에서 운영 중인 사이드 프로젝트 모음</p>
+          <h2 id="projects-title">개인 프로젝트</h2>
+          <p className="section__sub">직접 만들고 배포한 웹 서비스입니다.</p>
           {/* 프로젝트가 적을 때 필터는 의미가 없어 숨김 */}
           {projects.length >= 3 && <ProjectFilter tags={tags} value={filter} onChange={setFilter} />}
           {list.length ? (
-            <div className={list.length === 1 ? 'grid grid--single' : list.length === 2 ? 'grid grid--two' : 'grid'}>{list.map((p) => <ProjectCard key={p.slug} project={p} />)}</div>
+            <div className="project-list">{list.map((p) => <ProjectCard key={p.slug} project={p} />)}</div>
           ) : (
             <div className="empty">조건에 맞는 프로젝트가 없습니다.</div>
           )}
-          <KpiTiles />
         </div>
       </section>
       <section id="about" className="section">
         <div className="container about">
-          <h2>About</h2>
+          <h2>일하는 방식</h2>
           <p>{profile.about}</p>
         </div>
       </section>

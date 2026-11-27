@@ -12,9 +12,9 @@ export default function Contact() {
     }
   };
   return (
-    <section id="contact" className="section">
+    <section id="contact" className="section section--contact">
       <div className="container">
-        <h2>Contact</h2>
+        <h2>연락하기</h2>
         <p className="section__sub">협업·문의는 아래 주소로 연락 주세요.</p>
         <div className="contact">
           <a className="addr" href={`mailto:${profile.email}`}>{profile.email}</a>

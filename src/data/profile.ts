@@ -2,17 +2,17 @@
 export const profile = {
   siteUrl: 'https://tmakelab.com',
   brand: 'the make lab',
-  headline: '데이터 흐름을 이해하는 백엔드 개발자',
+  headline: '운영 시스템과 데이터를 다루는 백엔드 개발자',
   intro:
-    'Java와 Spring Boot로 백엔드를 개발합니다. 화면에서 원천 데이터까지 흐름을 살펴 문제를 해결합니다.',
+    '오래 운영된 시스템의 업무 규칙을 파악하고, 변경 전후의 결과를 검증하며 백엔드와 데이터 구조를 개선합니다.',
   about:
-    '운영 중인 시스템을 개선할 때는 기존 업무 로직과 예외 조건부터 파악합니다. API와 SQL을 함께 살펴 변경의 영향 범위를 좁히고, 전후 결과를 비교해 기능과 데이터가 의도대로 동작하는지 확인합니다. The Make Lab에서는 직접 웹 서비스를 만들고 운영합니다.',
+    '화면에서 발견한 문제가 API, SQL, 원천 데이터 중 어디서 시작됐는지 추적합니다. 기능을 바꿀 때는 예상 영향 범위와 기존 예외 조건을 먼저 확인합니다. The Make Lab에서는 이 경험을 바탕으로 웹 서비스를 직접 만들고 운영합니다.',
   github: 'https://github.com/odang3',
   email: 'showme1470@naver.com',
   skills: [
-    { group: 'Backend', items: ['Java', 'Python'] },
+    { group: 'Backend', items: ['Java', 'Spring Boot', 'Python'] },
     { group: 'Frontend', items: ['JavaScript', 'React'] },
-    { group: '3D · 실시간', items: ['Three.js', 'WebSocket'] },
+    { group: 'Data', items: ['SQL', '데이터 마트', '배치'] },
     { group: 'Infra', items: ['Cloudflare'] },
   ],
 };
