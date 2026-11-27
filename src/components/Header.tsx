@@ -4,6 +4,7 @@ import ThemeToggle from './ThemeToggle';
 import { profile } from '../data/profile';
 
 const links = [
+  { id: 'about', label: 'About' },
   { id: 'projects', label: 'Projects' },
   { id: 'skills', label: 'Skills' },
   { id: 'contact', label: 'Contact' },

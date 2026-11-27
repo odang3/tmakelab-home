@@ -1,10 +1,12 @@
 import { useMemo, useState } from 'react';
 import Hero from '../components/Hero';
+import KpiTiles from '../components/KpiTiles';
 import Skills from '../components/Skills';
 import Contact from '../components/Contact';
 import ProjectCard from '../components/ProjectCard';
 import ProjectFilter, { type FilterKey } from '../components/ProjectFilter';
 import { projects } from '../data/projects';
+import { profile } from '../data/profile';
 import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 const statusOrder = { live: 0, wip: 1, archived: 2 } as const;
@@ -35,6 +37,12 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <section id="about" className="section">
+        <div className="container about">
+          <h2>About</h2>
+          <p>{profile.about}</p>
+        </div>
+      </section>
       <section id="projects" className="section">
         <div className="container">
           <h2>Projects</h2>
@@ -46,6 +54,7 @@ export default function Home() {
           ) : (
             <div className="empty">조건에 맞는 프로젝트가 없습니다.</div>
           )}
+          <KpiTiles />
         </div>
       </section>
       <Skills />
